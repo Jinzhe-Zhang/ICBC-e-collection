@@ -1,0 +1,13 @@
+{
+  "name": "icbc",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "ionic-angular",
+         "proxies": [
+           {
+             "path": "/icbc",
+             "proxyUrl": "https://apisandbox.dccnet.com.cn/api/bas/face/facesadd/V1"
+           }
+         ]
+}

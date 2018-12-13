@@ -1,0 +1,24 @@
+<ion-list>
+  <img src='../../assets/imgs/logo.png' alt=""/>
+  <ion-card id="labelcontent">
+    <ion-item>
+      <ion-input type="text" placeholder="输入用户名" id="username" [(ngModel)]="username"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-input type="password" placeholder="输入密码" id="password" [(ngModel)]="password"></ion-input>
+    </ion-item>
+    <ion-item >
+      <ion-grid style="margin-top:-10px;">
+        <ion-row>
+          <ion-col > <button ion-button block (click)="signIn()" >登录</button></ion-col>
+        </ion-row>
+      </ion-grid>     
+    </ion-item>
+
+
+    <div style="width:100%;height:5vh;margin-top:6vh" ><button  (click)="signUp()" style="color:#3a3;background:transparent;position:absolute;right:18%;">注册</button> </div>
+  </ion-card>
+
+  
+</ion-list>

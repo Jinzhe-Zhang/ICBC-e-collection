@@ -1,0 +1,32 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      交易记录
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+<ion-content>
+  <ion-grid class='head'>
+    <ion-row>
+      <ion-col col-6>今日交易金额(元)</ion-col><ion-col col-6>成功交易笔数</ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col col-6>¥<b>{{todayTradeMoney/100}}</b></ion-col><ion-col col-6><b>{{data.length}}</b>笔</ion-col>
+    </ion-row>
+  </ion-grid>
+  <ion-icon name="alert" *ngIf="this.data.length==0; else elseBlock" style="font-size: 7rem;color: red;position: fixed;top: 50vh;left: 50vw;margin: -2.87rem;"><h2 style="font-family:   Microsoft Yahei;font-size: 1.5rem;color: black;width: 100%;text-align: center;">暂无收益</h2></ion-icon>
+  <ng-template #elseBlock>
+    <div id="account">
+      <ion-card *ngFor="let item of this.data">
+        <h5>交易卡号<br/>***{{item.mycard_no.slice(-4)}}</h5>
+        <h4>交易金额</h4>
+        <h3><b [ngClass]="item.account">{{(item.total_amt/100).toFixed(2)}}</b> 人民币</h3> 
+        <ion-grid class="cardgrid">
+          <ion-row>
+            <ion-col col-6><h4>交易时间：<br\>{{item.time}}</h4></ion-col><ion-col col-6><h4 style="margin-left:4vw">备注：<br\>{{item.attach==""?'无':item.attach}}</h4></ion-col>
+          </ion-row>
+        </ion-grid>   
+      </ion-card>
+    </div>
+  </ng-template>
+</ion-content>

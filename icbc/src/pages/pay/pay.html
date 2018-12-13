@@ -1,0 +1,43 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      收款
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+<ion-content padding>
+  <!-- 计算总金额 -->
+  <ion-item>
+    <h1 class="title">消费金额</h1>
+
+
+    <h1 class="sum" *ngIf="text!=''; else elseBlock">  
+      <h3 class="right">{{ptext}}</h3>
+      {{'¥'+sum.toFixed(2) }}
+    </h1>
+    <ng-template #elseBlock>
+      <h1 class="sum0">  
+       输入金额
+     </h1>
+   </ng-template>
+
+
+ </ion-item>
+
+ <!-- 添加备注 -->
+ <ion-item><ion-input type="text"  placeholder="备注" [(ngModel)]="attach">
+
+
+ </ion-input></ion-item>
+ <ion-grid class="calculator cleft">
+  <ion-row>
+    <ion-col col-4 *ngFor="let item of calcbtns" value="item"  (click)="btnpush(item)"><div><h3>{{item}}</h3></div></ion-col>
+  </ion-row>
+</ion-grid>
+<ion-grid class="calculator cright">
+  <ion-row>
+    <ion-col col-12   (click)="btnpush('cancel')"><div><img src="../../assets/imgs/paypage/back.png" alt=""></div></ion-col>
+    <ion-col col-12   (click)="btnpush('ok')" class="okbtn"><div><h4>确认</h4></div></ion-col>
+  </ion-row>
+</ion-grid>
+</ion-content>

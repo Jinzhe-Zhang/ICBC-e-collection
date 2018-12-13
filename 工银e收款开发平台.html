@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>工银e收款开发平台</title>
+    <script type="text/javascript">
+        function submit(){
+            var id=document.getElementById("title").value+">split<"+document.getElementById("discribe").value+">split<"+document.getElementById("pic").value+">split<game";//以>split<（标识字符串）分割id
+            var myhtml=document.getElementById("html").value;
+            var mycss=document.getElementById("css").value;
+            mycss=mycss.replace(/body *?{/g, "#content{");
+            var myjs=document.getElementById("js").value;
+            var body={"_id": id, "html":myhtml,"css":mycss, "js": myjs};
+            var request = new XMLHttpRequest();
+            request.open( "POST", "https://b7bf9be6-b9b5-435a-97bb-0333669d7045-bluemix.cloudant.com/activities" );//activities目录请求
+            request.setRequestHeader("Content-type","application/json");
+            request.setRequestHeader("Authorization","Basic b3ZlbHltcG9zZWRnZXJpZXJ5aW5oYXR1OjQ0MmIzODIwN2VkMDc5YTAwMTA4NjAzMTNjNjdhZDYwMGUzOTI0MTM=");//activities cloudant标识
+            request.onreadystatechange = function(){
+                if (request.readyState == 4) {
+            //根据服务器的响应内容格式处理响应结果
+            if(request.getResponseHeader('content-type')==='application/json'){
+                var result = JSON.parse(request.responseText);  
+                //根据返回结果判断验证码是否正确
+                if(result.code===-1){
+                    alert('错误');
+                }
+            } else {
+                alert(request.responseText);
+            }
+        }
+    }
+    request.send(JSON.stringify(body));//发送请求
+}
+</script>
+</head>
+<body>
+    <p>名称</p>
+    <textarea rows="1" cols="60" id="title" placeholder="作品名称"></textarea>
+    <p>介绍</p>
+    <textarea rows="1" cols="60" id="discribe" placeholder="作品介绍"></textarea>
+    <p>图片</p>
+    <textarea rows="1" cols="60" id="pic" placeholder="宣传图片"></textarea>
+    <p>html</p>
+    <textarea rows="16" cols="200" id="html" placeholder="在此输入你的html代码">
+    </textarea>
+    <p>css</p>
+    <textarea rows="16" cols="200" id="css" placeholder="在此输入你的css代码">
+    </textarea>
+    <p>js</p>
+    <textarea rows="16" cols="200" id="js" placeholder="在此输入你的js代码">
+    </textarea>
+    <br/>
+    <input type="submit" onclick="submit()">
+</body>
+</html>

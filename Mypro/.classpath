@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8"/>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="lib" path="icbc-api-sdk-cop_v2_20180704/lib/commons-logging-1.2.jar"/>
+	<classpathentry kind="lib" path="icbc-api-sdk-cop_v2_20180704/lib/icbc-api-sdk-cop-io.jar"/>
+	<classpathentry kind="lib" path="icbc-api-sdk-cop_v2_20180704/lib/icbc-api-sdk-cop.jar"/>
+	<classpathentry kind="lib" path="icbc-api-sdk-cop_v2_20180704/lib/icbc-ca.jar"/>
+	<classpathentry kind="lib" path="icbc-api-sdk-cop_v2_20180704/lib/InfosecCrypto_Java1_02_JDK14+.jar"/>
+	<classpathentry kind="lib" path="net.sf.json jar/commons-beanutils-1.7.0.jar"/>
+	<classpathentry kind="lib" path="net.sf.json jar/commons-collections-3.1.jar"/>
+	<classpathentry kind="lib" path="net.sf.json jar/commons-lang-2.5.jar"/>
+	<classpathentry kind="lib" path="net.sf.json jar/commons-logging.jar"/>
+	<classpathentry kind="lib" path="net.sf.json jar/ezmorph-1.0.3.jar"/>
+	<classpathentry kind="lib" path="net.sf.json jar/json-lib-2.4-jdk15.jar"/>
+	<classpathentry kind="lib" path="icbc-api-sdk-cop_v2_20181113/sources/icbc-api-sdk-cop-io-sources.jar"/>
+	<classpathentry kind="lib" path="icbc-api-sdk-cop_v2_20181113/sources/icbc-api-sdk-cop-sources.jar"/>
+	<classpathentry kind="lib" path="icbc-api-sdk-cop_v2_20181113/lib/icbc-ca.jar"/>
+	<classpathentry kind="lib" path="icbc-api-sdk-cop_v2_20181113/lib/icbc-api-sdk-cop.jar"/>
+	<classpathentry kind="lib" path="icbc-api-sdk-cop_v2_20181113/lib/icbc-api-sdk-cop-io.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

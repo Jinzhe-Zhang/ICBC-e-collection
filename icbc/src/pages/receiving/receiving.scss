@@ -1,0 +1,42 @@
+page-receiving {
+    #grad {
+      background: -webkit-linear-gradient(150deg, #3578e9, #a578e9); /* Safari 5.1 - 6.0 */
+      background: -o-linear-gradient(150deg, #3578e9, #a578e9); /* Opera 11.1 - 12.0 */
+      background: -moz-linear-gradient(150deg, #3578e9, #a578e9); /* Firefox 3.6 - 15 */
+      background: linear-gradient(150deg, #3578e9, #a578e9); /* 标准的语法 */
+
+  }
+  #payQrcode,.money,.qrcodetext,.text{
+    position: absolute;
+    left: 15vw;
+    width: 70vw;
+    top: 10vh;
+    text-align:  center;
+}
+#payQrcode,.money{
+    height: 70vw;  
+}
+.money{
+    top: 10vh;
+    margin-top: 70vw;
+    background-color: white;
+    height: 5rem;
+}
+.money h1{
+
+    font-size: 4rem;
+}
+.qrcodetext,.text{
+    left: 0;
+    width: 100%;
+    margin-top: 70vw ;
+    top: 20vh;
+    color: yellow;
+}
+.text{
+    font-size: 1.5rem;
+    top: 26vh;
+    color: black;
+}
+}
+

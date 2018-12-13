@@ -1,0 +1,25 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title class="toolbar-title-back">
+      统计报表
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+<ion-content padding>
+  <div #container1 class="EchartsDiv" style="height:60vh"></div>
+  <ion-grid>
+    <ion-row>
+      <ion-col col-6><h6>本周平均：<br\>{{(weekMoney[3]/7).toFixed(2)}}元</h6></ion-col> 
+      <ion-col col-6><h6>上周平均：<br\>{{(weekMoney[2]/7).toFixed(2)}}元</h6></ion-col> 
+    </ion-row>
+  </ion-grid>
+  <div #container2 class="EchartsDiv" style="height:60vh"></div>
+  <ion-grid>
+    <ion-row>
+      <ion-col col-6><h6>本月总计：<br\>{{(monthMoney[11]).toFixed(2)}}元</h6></ion-col> 
+      <ion-col col-6><h6>日平均：<br\>{{(monthMoney[11]/28).toFixed(2)}}元</h6></ion-col> 
+    </ion-row>
+  </ion-grid>
+  <div #container3 class="EchartsDiv" style="height:60vh"></div>
+
+</ion-content>

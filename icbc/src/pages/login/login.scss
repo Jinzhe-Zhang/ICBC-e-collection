@@ -1,0 +1,39 @@
+page-login {
+    ion-label{
+        width:90%;
+    }
+    img{
+        position: absolute;
+        left: 35vw;
+        bottom:  70vh;
+        width: 30vw;
+        height: 30vw;
+    }
+    #labelcontent{
+       position: absolute;
+       margin-left: -2.5px;
+       left: 10vw;
+       top: 35vh;
+       width: 80vw;
+       height: 45vh;
+/*        border: 1px solid black;
+border-radius: 9px; */
+}
+#lbl,#lbl{
+    width: 70px;
+}
+ion-item{
+    transform: translate(0,50%);
+}
+button{
+    background-color: #3578e9;
+}
+input{
+    text-align: center;
+}
+
+input:focus{
+
+}
+}
+

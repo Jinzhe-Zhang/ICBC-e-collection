@@ -1,0 +1,29 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      发现
+  </ion-title>
+</ion-navbar>
+</ion-header>
+
+<ion-content class="cards-bg">
+
+  <ion-card *ngFor="let item of this.data" (click)="toarticle(item)">
+
+    <img src="{{item.id.split('>split<')[2]}}"/>
+
+    <ion-card-content>
+      <ion-card-title>
+        {{item.id.split('>split<')[0]}}
+    </ion-card-title>
+    <p>
+        {{item.id.split('>split<')[1]}}
+    </p>
+</ion-card-content>
+
+
+</ion-card>
+
+
+
+</ion-content>

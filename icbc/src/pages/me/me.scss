@@ -1,0 +1,20 @@
+page-me {
+    .girdbtn{
+        height: 24vw;
+        padding: 0 8vw 0 8vw;
+    }
+    .girdbtn span{
+        position: absolute;
+        width: 50%;
+        text-align: center;
+        font-size: 3.6vw;
+    }
+    .girdbtn ion-avatar{
+        padding: 30% 20% 10% 20% ;
+        height: 16vw;
+    }
+    ion-list-header{
+        border-bottom: 0.1px solid gray;
+    }
+    
+}

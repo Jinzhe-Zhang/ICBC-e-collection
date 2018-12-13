@@ -1,0 +1,18 @@
+<ion-content class="tutorial-page">
+
+  <ion-slides pager>
+    <ion-slide *ngFor="let slide of slides">
+      <img [src]="slide.image" class="slide-image"/>
+      <h2 class="slide-title" [innerHTML]="slide.title"></h2>
+      <p [innerHTML]="slide.description"></p>
+    </ion-slide>
+    <ion-slide>
+      <img src="../../assets/imgs/welcomepage/4.png" class="slide-image"/>
+      <h2 class="slide-title">准备好了吗？</h2>
+      <button ion-button large clear icon-end color="primary"  (click)="toTabPage()">
+        开启我的财富之旅
+        <ion-icon name="arrow-forward"></ion-icon>
+      </button>
+    </ion-slide>
+  </ion-slides>
+</ion-content>

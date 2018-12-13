@@ -1,0 +1,28 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title class="toolbar-title-back">
+      修改信息
+  </ion-title>
+</ion-navbar>
+</ion-header>
+<ion-content padding>
+    <ion-item>
+        <ion-label>邮箱</ion-label>
+        <ion-input type="text" [(ngModel)]="email">邮箱</ion-input>
+    </ion-item>
+    <ion-item>
+        <ion-label>手机号码</ion-label>
+        <ion-input type="tel"[(ngModel)]="phone"></ion-input>
+    </ion-item>
+    <canvas id="stageCanvas"></canvas>
+    <ion-grid style="margin-top:-10px;">
+        <ion-row>
+            <ion-col > <button ion-button block (click)="getPictureByCamera()" >上传照片</button></ion-col>
+        </ion-row>
+    </ion-grid> 
+    <ion-grid style="margin-top:-10px;">
+        <ion-row>
+            <ion-col > <button ion-button block (click)="submit()" >修改信息</button></ion-col>
+        </ion-row>
+    </ion-grid> 
+</ion-content>

@@ -1,0 +1,15 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title class="toolbar-title-back">
+      Carddetail
+  </ion-title>
+</ion-navbar>
+</ion-header>
+<ion-content padding>
+    <div *ngIf = "this.confirmation">
+        <ion-item>卡号：{{this.id.split(':')[1].slice(0,4)+'********'+this.id.split(':')[1].slice(-4)}}</ion-item>
+        <ion-item>卡片类型：{{this.id.split(':')[2]}}</ion-item>
+        <ion-item>存款余额：{{this.balance/100}}¥</ion-item>
+        <ion-item>借贷金额：{{this.borrow}}¥</ion-item>
+    </div>
+</ion-content>

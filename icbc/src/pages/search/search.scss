@@ -1,0 +1,69 @@
+page-search {
+    #account{
+        padding: 10px;
+    }
+    ion-content{
+        background-color: #FCFCFC !important;
+    }
+    ion-card{
+        margin-top: 20px!important;
+    }
+    .head{
+        width: 100%;
+        left: 0;
+        top: 0;
+        height: 20vh;
+        background-color: #3578e9;
+        color: white;
+        [col-6]{
+            margin-top: 1.6vh;
+            text-align: center;
+            font-size: 5vw;
+            b{
+                font-size: 10vw;
+            }
+        }
+    }
+    h5{
+        transform: translate(0, 1.6vh);
+        margin-bottom: -14vw !important;
+        margin-right: 6vw !important;
+        font: 4vw SimHei lighter!important;
+        color: gray !important;
+        text-align: right;
+    }
+    h4{
+        margin-top: 2vh !important;
+        font: 1.5vw sans-serif;
+        color: gray;
+    }
+    h3{
+        font: 4vw SimHei lighter!important;
+        color: gray !important;
+        b{
+            font: 10vw sans-serif!important;
+            font-weight: 900!important;
+        }
+        .color6{
+            color: orange!important;
+        }
+        .color5{
+            color: purple!important;
+        }
+        .color4{
+            color: #3578e9!important;
+        }
+        .color3,.color2,.color1{
+            color: black!important;
+        }
+}/* 
+ion-col:first-child{
+    margin-left: -10px!important;
+    } */
+    ion-card{
+        padding-left: 6vw ;
+    }
+    .cardgrid{
+        margin-left: -3vw;
+    }
+}

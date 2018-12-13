@@ -1,0 +1,25 @@
+page-account {
+    
+ion-label{
+    font-size: 1.7rem;
+    margin-right:0 !important; 
+}
+i{
+    font: normal 1.2rem SimHei ;
+    color: #3578e9;
+}
+#head{
+    position: absolute;
+    width: 20vw;
+    height: 20vw;
+    right: 26px;
+    margin-right: 5vw;
+    top: 65px;
+    margin-top:1.7rem ;
+    z-index: 100;
+}
+.selected{
+    background-color: #daf!important;
+}
+}
+

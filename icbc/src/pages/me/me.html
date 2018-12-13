@@ -1,0 +1,37 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      我的
+    </ion-title>
+    <ion-buttons end>
+      <button ion-button icon-only>
+        <ion-icon name="settings"></ion-icon>
+      </button>
+    </ion-buttons><!-- 
+    <ion-icon name="settings" class="abright ionicon" (click)=onc()></ion-icon> -->
+  </ion-navbar>
+</ion-header>
+<ion-content>
+    <ion-item style="height: 30vh;background-color: #75a8ff;" >
+            <ion-avatar item-start>
+      <img src="../assets/imgs/mepagebuttons/head.jpeg">
+    </ion-avatar>
+    <h2>欢迎回来！</h2>
+<h2>{{username}}</h2>
+    <p>{{date}}</p>
+    </ion-item>
+    <ion-list>
+      <a style="margin-top:46px;position:fixed;top:15vh;right:20vw;color:yellow;" (click)="cancel()">注销用户</a>
+        <ion-grid>
+  <ion-row>
+    <ion-col col-4 class = "girdbtn" *ngFor="let item of items" >
+            <ion-avatar item-start>
+                <img src="{{pathhead+item.path}}" alt="" (click)="push(item.page)">
+            </ion-avatar>
+            <span>{{item.span}}</span>
+        
+    </ion-col>
+  </ion-row>
+</ion-grid>
+    </ion-list>
+</ion-content>

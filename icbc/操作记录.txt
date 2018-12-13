@@ -1,0 +1,6 @@
+cd c:/users/29410/desktop/icbc
+ionic serve
+
+ion-content scroll="false"
+
+ionic run android  
